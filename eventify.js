@@ -50,6 +50,9 @@
     if (args.length < 2 || target === undefined) return {};
     for (var index = 1; index < length; index++) {
       //get keys
+      var currentArg = argument[index],
+          keys = keys(currentArg);
+
       return obj;
     }
   };
@@ -57,7 +60,7 @@
   //Generates keys for the passed-in object
   var keys = Eventify.keys = function(obj) {
     //Integrity checks
-    if ()
+    if (!isObject(obj)) return 
     var keys = [];
     for (var key in obj) { keys.push(key); }
 
@@ -65,9 +68,8 @@
   }
 
   //Is the passed-in value an object?
-  var isObject = Eventify.isObject = function() {
-    
-    return {};
+  var isObject = Eventify.isObject = function(obj) {
+    return typeof obj === 'object' && !!obj;
   }
 
   //Attach all inheritable properties to Eventify prototype
