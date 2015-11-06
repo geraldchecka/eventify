@@ -1,5 +1,4 @@
 (function() {
-  var events = {};
 
   function Eventify() {
     this.events = {};
@@ -9,7 +8,7 @@
   //Prototype definitions go here
   //Please feel free to add your own methods here if you'd like to extend Eventify
 
-
+  //Method definitions go here
   var methodApi = {
     //On
       //Accept a last parameter that is a number and millisecond value
@@ -43,28 +42,27 @@
 
   //Extend a given object with all the properties in passed-in object
   var extend = Eventify.extend = function() {
-    var length = arguments.length,
-        args = arguments,
+    var aLen = arguments.length,
         target = arguments[0];
-
-    if (args.length < 2 || target === undefined) return {};
-    for (var index = 1; index < length; index++) {
-      //get keys
-      var currentArg = argument[index],
-          keys = keys(currentArg);
-
-      return obj;
+    if (aLen < 2 || target === void 0) return {};
+    for (var aIndex = 1; aIndex < aLen; aIndex++) {
+      var source = arguments[aIndex],
+          keys = getKeys(source),
+          kLen = keys.length;
+      for (var kIndex = 0; kIndex < kLen; kIndex++) {
+        var key = keys[kIndex];
+        target[key] = source[key];
+      }
+      return target;
     }
   };
 
   //Generates keys for the passed-in object
-  var keys = Eventify.keys = function(obj) {
-    //Integrity checks
-    if (!isObject(obj)) return 
+  var getKeys = Eventify.keys = function(obj) {
     var keys = [];
+    if (!isObject(obj)) return keys;
     for (var key in obj) { keys.push(key); }
-
-    return objectOut;
+    return keys;
   }
 
   //Is the passed-in value an object?
@@ -79,4 +77,6 @@
   Eventify.version = "1.0.0";
 
   //module.exports = Eventify;
+  //Remove later
+  window.Eventify = Eventify;
 })();
