@@ -1,0 +1,26 @@
+{
+  "name": "eventify",
+  "description": "A micro JavaScript event dispatcher",
+  "version": "1.0.0",
+  "readme": "README.md",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geraldchecka/eventify.git"
+  },
+  "private": true,
+  "author": "Anvesh Checka",
+  "bugs": {
+    "url": "https://github.com/geraldchecka/eventify/issues"
+  },
+  "homepage": "https://github.com/geraldchecka/eventify#readme",
+  "engines": {
+    "node": "0.12.x"
+  },
+  "keywords": [
+    "eventify",
+    "message-bus",
+    "events",
+    "event-dispatcher"
+  ]
+}
