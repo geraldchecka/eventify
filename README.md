@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/geraldchecka/eventify.svg?branch=master)](https://travis-ci.org/geraldchecka/eventify)
+[![Build Status](https://travis-ci.org/geraldchecka/eventify.svg?branch=master)](https://travis-ci.org/geraldchecka/eventify) [![Dependencies](https://david-dm.org/geraldchecka/eventify.png?theme=shields.io)](https://david-dm.org/geraldchecka/eventify) [![devDependency Status](https://david-dm.org/geraldchecka/eventify/dev-status.svg)](https://david-dm.org/geraldchecka/eventify#info=devDependencies)
+
 
 # eventify
 
