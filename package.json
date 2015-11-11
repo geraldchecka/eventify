@@ -4,7 +4,6 @@
   "url": "http://geraldchecka.github.io/eventify",
   "version": "1.0.3",
   "author": "Anvesh Checka",
-  "readme": "README.md",
   "scripts": {
     "doc": "docco eventify.js",
     "build": "uglifyjs eventify.js --mangle --source-map eventify-min.map -o eventify-min.js",

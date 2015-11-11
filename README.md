@@ -1,4 +1,4 @@
-# eventify
+# eventify-js
 
 > A micro library built to handle JavaScript event dispatching.
 > Does binding, unbinding, triggering and aliasing.
