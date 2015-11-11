@@ -8,8 +8,7 @@
   "scripts": {
     "doc": "docco eventify.js",
     "build": "uglifyjs eventify.js --mangle --source-map eventify-min.map -o eventify-min.js",
-    "test": "grunt jasmine:eventify",
-    "coveralls": "cat ./reports/coverage/lcov/lcov.info | ./node_modules/.bin/coveralls"
+    "test": "grunt jasmine:eventify"
   },
   "devDependencies": {
     "docco": "^0.7.0",

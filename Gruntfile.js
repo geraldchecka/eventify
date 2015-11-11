@@ -34,10 +34,13 @@ var gruntLoader = function(grunt) {
             ]
           }
         }
-      },
-      coveralls: {
+      }
+    },
+    coveralls: {
+      eventify: {
+        src: 'reports/coverage/lcov/lcov.info',
         options: {
-          src: 'reports/coverage/lcov/lcov.info'
+          force: true
         }
       }
     }
