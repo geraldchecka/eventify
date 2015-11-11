@@ -1,8 +1,8 @@
 {
-  "name": "eventify",
+  "name": "eventify-js",
   "description": "A micro JavaScript event dispatcher.",
   "url": "http://geraldchecka.github.io/eventify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Anvesh Checka",
   "readme": "README.md",
   "scripts": {
