@@ -25,7 +25,7 @@
     "type": "git",
     "url": "https://github.com/geraldchecka/eventify.git"
   },
-  "private": true,
+  "private": false,
   "bugs": {
     "url": "https://github.com/geraldchecka/eventify/issues"
   },
