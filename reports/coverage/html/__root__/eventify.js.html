@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for eventify.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">__root__/</a> eventify.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">84.91% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>45/53</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">65.71% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>23/35</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">91.67% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>11/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">93.33% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>42/45</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">//     eventify.js 1.0.0
+&nbsp;
+//     Eventify may be freely distributed under the MIT license.
+//     For all details and documentation:
+//     http://geraldchecka.github.io/eventify
+&nbsp;
+(function(Eventify) {
+  
+  // Cross environment Support
+  // -------------------------
+  // Setup Eventify appropriately for the environment.
+&nbsp;
+  // Support for AMD
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof define === "function" &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >define.amd)</span> {
+<span class="cstat-no" title="statement not covered" >    define(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >      return Eventify;</span>
+    });
+  }
+  
+  // Setup for libraries that expose 'exports'
+  else <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof module !== "undefined" &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >module.exports)</span> {
+<span class="cstat-no" title="statement not covered" >    module.exports = Eventify;</span>
+  }
+&nbsp;
+  // Support for browser global
+  else {
+    window.Eventify = Eventify;
+  }
+&nbsp;
+}(function() {
+&nbsp;
+  // Base Setup 
+  // ----------
+&nbsp;
+  // **Base class** constructor
+  function Eventify() {
+    this.events = {};
+  }
+&nbsp;
+  // Wrapper method holds all core method definitions. It is later attached to prototype
+  // using a publicly available method called `mixin`.
+  var methodApi = {
+    // Expects an event name, callback and a context[*optional*]
+    // Event names can be aliased using space as a separator.
+    on: function(event, callback, context) {
+      // ***event.split*** with a regex fared good in all browsers except Chrome.
+      // 
+      //     Regex and String manipulation micro-benchmarks did well in browsers, but chrome.
+      //     So leaving it to be a character string as it is a highly used browser.
+      //     http://jsperf.com/regex-string-tests-1
+      //
+      var events = event.split(" "),
+          eLen = events.length,
+          aVoid = void 0;
+      <span class="missing-if-branch" title="if path not taken" >I</span>if ((typeof event !== "string" || typeof callback !== "function") &amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered" >events[0].length &gt; 0)</span> <span class="cstat-no" title="statement not covered" >throw new TypeError("Invalid input arguments.");</span>
+      for (var eIndex = 0; eIndex &lt; eLen; eIndex++) {
+        this.events[events[eIndex]] = {
+          context: context || aVoid,
+          callback: callback
+        };
+      }
+      return this;  
+    },
+    // Remove events and listeners from the parent object
+    off: function(event) {
+      <span class="missing-if-branch" title="else path not taken" >E</span>if (this.isEvent(event)) delete this.events[event];
+      return this;
+    },
+    // Looks up appropriate event and calls up its listener.
+    trigger: function(event) {
+      var handler = this.events[event],
+          context = handler.context || this,
+          args = Array.prototype.slice.call(arguments);
+      args.splice(0,1);
+      <span class="missing-if-branch" title="else path not taken" >E</span>if (this.isEvent(event)) handler.callback.apply(context, args);
+      return this;
+    },
+    // `isEvent` Is the passed-in value an Event?
+    isEvent: function(event) {
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof event !== "string" || event.length &lt; 1) <span class="cstat-no" title="statement not covered" >return false;</span>
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (!this.events[event]) <span class="cstat-no" title="statement not covered" >return false;</span>
+      return true;
+    }
+  };
+&nbsp;
+  // Utility functions
+  // -----------------
+&nbsp;
+  // `extend` Extends a given object with all the properties in passed-in object
+  var extend = Eventify.extend = function() {
+    var aLen = arguments.length,
+        target = arguments[0];
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (aLen &lt; 2 || target === void 0) <span class="cstat-no" title="statement not covered" >return {};</span>
+    for (var aIndex = 1; aIndex &lt; aLen; aIndex++) {
+      var source = arguments[aIndex],
+          keys = getKeys(source),
+          kLen = keys.length;
+      for (var kIndex = 0; kIndex &lt; kLen; kIndex++) {
+        var key = keys[kIndex];
+        target[key] = source[key];
+      }
+    }
+    return target;
+  };
+&nbsp;
+  // `getKeys` Generate keys for the passed-in object
+  var getKeys = Eventify.getKeys = function(obj) {
+    var keys = [];
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (!isObject(obj)) <span class="cstat-no" title="statement not covered" >return keys;</span>
+    for (var key in obj) { keys.push(key); }
+    return keys;
+  };
+&nbsp;
+  // `isObject` Is the passed-in value an object?
+  var isObject = Eventify.isObject = function(obj) {
+    return typeof obj === 'object' &amp;&amp; !!obj;
+  };
+&nbsp;
+  // `mixin`
+  // **Mixin** lets you add your own custom properties and functions to the Eventify object
+  var mixin = Eventify.mixin = function(obj) {
+    extend(Eventify.prototype, obj);
+  };
+&nbsp;
+  // Onboard all wrapper methods to Eventify
+  mixin(methodApi);
+&nbsp;
+  // Current **version** of the library
+  Eventify.version = "1.0.0";
+&nbsp;
+  return Eventify;
+}()));</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Nov 11 2015 19:22:46 GMT+0530 (IST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
