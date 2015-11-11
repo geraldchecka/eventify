@@ -2,7 +2,7 @@
   "name": "eventify-js",
   "description": "A micro JavaScript event dispatcher.",
   "url": "http://geraldchecka.github.io/eventify",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Anvesh Checka",
   "readme": "README.md",
   "scripts": {
@@ -33,5 +33,10 @@
   "engines": {
     "node": "0.12.x"
   },
-  "keywords": [ "eventify", "message-bus", "events", "event-dispatcher" ]
+  "keywords": [
+    "eventify",
+    "message-bus",
+    "events",
+    "event-dispatcher"
+  ]
 }
