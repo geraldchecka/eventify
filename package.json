@@ -8,7 +8,8 @@
   "scripts": {
     "doc": "docco eventify.js",
     "build": "uglifyjs eventify.js --mangle --source-map eventify-min.map -o eventify-min.js",
-    "test": "grunt jasmine:eventify"
+    "test": "grunt jasmine:eventify",
+    "coveralls": "cat ./reports/coverage/lcov/lcov.info | ./node_modules/.bin/coveralls"
   },
   "devDependencies": {
     "docco": "^0.7.0",
@@ -16,7 +17,8 @@
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-jasmine": "^0.9.2",
-    "grunt-template-jasmine-istanbul": "^0.4.0"
+    "grunt-template-jasmine-istanbul": "^0.4.0",
+    "grunt-coveralls": "^1.0.0"
   },
   "main": "eventify.js",
   "license": "MIT",

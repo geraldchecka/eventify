@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/geraldchecka/eventify.svg?branch=master)](https://travis-ci.org/geraldchecka/eventify) [![Dependencies](https://david-dm.org/geraldchecka/eventify.png?theme=shields.io)](https://david-dm.org/geraldchecka/eventify) [![devDependency Status](https://david-dm.org/geraldchecka/eventify/dev-status.svg)](https://david-dm.org/geraldchecka/eventify#info=devDependencies)
+[![Build Status](https://travis-ci.org/geraldchecka/eventify.svg?branch=master)](https://travis-ci.org/geraldchecka/eventify) [![Coverage Status](https://coveralls.io/repos/geraldchecka/eventify/badge.svg?branch=master)](https://coveralls.io/r/geraldchecka/eventify?branch=master) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Dependencies](https://david-dm.org/geraldchecka/eventify.png?theme=shields.io)](https://david-dm.org/geraldchecka/eventify) [![devDependency Status](https://david-dm.org/geraldchecka/eventify/dev-status.svg)](https://david-dm.org/geraldchecka/eventify#info=devDependencies)
 
 
 # eventify

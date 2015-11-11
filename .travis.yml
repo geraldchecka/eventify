@@ -10,6 +10,8 @@ script:
   - npm run build
   - npm run test
   - npm run doc
+after_success:
+  - npm run coveralls
 notifications:
   email: true
 sudo: false

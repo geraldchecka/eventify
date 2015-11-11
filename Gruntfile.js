@@ -24,9 +24,20 @@ var gruntLoader = function(grunt) {
                 options: {
                   dir: 'reports/coverage/text-summary'
                 }
+              },
+              {
+                type: 'lcov',
+                options: {
+                  dir: 'reports/coverage/lcov'
+                }
               }
             ]
           }
+        }
+      },
+      coveralls: {
+        options: {
+          src: 'reports/coverage/lcov/lcov.info'
         }
       }
     }
@@ -35,6 +46,7 @@ var gruntLoader = function(grunt) {
   grunt.initConfig(config);
 
   grunt.loadNpmTasks('grunt-contrib-jasmine');
+  grunt.loadNpmTasks('grunt-coveralls');
 
   grunt.registerTask('default', [ 'jasmine:eventify' ]);
 };
